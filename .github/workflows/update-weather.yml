@@ -47,25 +47,27 @@ jobs:
         hours=$((day_length/3600))
         minutes=$(((day_length%3600)/60))
         
-        # Create weather content
-        weather_content="\n📍 Currently in Calgary:\n"
-        weather_content+="The temperature is  **${temperature}°C, *${weather_condition}***\n"
-        weather_content+="Sunrise: ***${sunrise_local}***,         Sunset: **${sunset_local}**\n"
-        weather_content+="Day length: **${hours} hours, ${minutes} minutes**\n"
-        weather_content+="> Last updated at ${current_time}\n"
+        # Create weather content with explicit newlines
+        weather_content="📍 Currently in Calgary:\\n\\n"
+        weather_content+="The temperature is  **${temperature}°C, *${weather_condition}***\\n\\n"
+        weather_content+="Sunrise: ***${sunrise_local}***,         Sunset: **${sunset_local}**\\n\\n"
+        weather_content+="Day length: **${hours} hours, ${minutes} minutes**\\n\\n"
+        weather_content+="> Last updated at ${current_time}\\n"
         
         # Update README.md between the markers
-        awk -v weather="$weather_content" '
+        awk '
         /<!-- WEATHER_START -->/ {
           print;
-          print weather;
+          printf "'"$weather_content"'";
+          in_weather = 1;
           next;
         }
         /<!-- WEATHER_END -->/ {
+          in_weather = 0;
           print;
           next;
         }
-        !/<!-- WEATHER_END -->/ {
+        !in_weather {
           print;
         }' README.md > README.tmp && mv README.tmp README.md
         
