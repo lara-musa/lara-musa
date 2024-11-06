@@ -1,8 +1,27 @@
-<h1><img src="https://cdn.discordapp.com/emojis/552927522824781834.gif?size=128" width="32"/> Hi! I'm lara</h1>
+<h1><img src="https://cdn.discordapp.com/emojis/635255827313328149.gif?size=128" width="32"/> hi there, i'm lara</h1>
 <!-- emoji source: https://blobs.gg/ -->
 
-<p>Welcome to my page! </br> I'm Lara, Electrical Engineering Student in <img src="https://cdn-icons-png.flaticon.com/128/4628/4628640.png" width="15"/> <b>Calgary, Canada</b>. </p>
+<p>I'm an Electrical Engineering Student in <img src="https://cdn-icons-png.flaticon.com/128/4628/4628640.png" width="15"/> <b>Calgary, Canada</b>. I'm currently finishing my degree and whipping up a few projects on the side.</p>
 <!-- country icon  source: https://www.flaticon.com/search?word=canada -->
+
+<table>
+  <tr>
+    <td>
+      <ul>
+        <li>🔭 I’m currently working on <strong>something</strong></li>
+        <li>🌱 I’m currently learning <strong>something</strong></li>
+        <li>👨‍💻 All of my projects are available at <a href="link">link</a></li>
+        <li>💬 Ask me about <strong>anything</strong></li>
+        <li>📫 How to reach me <strong>lara.musa...</strong></li>
+        <li>⚡ Fun fact <strong>funfact</strong></li>
+      </ul>
+    </td>
+    <td>
+      <img src="https://i.pinimg.com/564x/6c/94/ac/6c94ac7ee21445949bcd141d4328d45f.jpg" width="200"/>
+    </td>
+  </tr>
+</table>
+
 
 <h3>Things I code with</h3>
 <p>
@@ -26,13 +45,13 @@
 <!-- WEATHER_START -->
 ☁️Currently in Calgary:
 
-The temperature is  **2°C, *Overcast ***
+The temperature is  **3°C, *Sunny***
 
 Sunrise: ***7:36 AM***,         Sunset: **5:02 PM**
 
 Day length: **9 hours, 25 minutes**
 
-> Last updated at 3:35 PM MST
+> Last updated at 2:44 PM MST
 <!-- WEATHER_END -->
 <!-- weather data source: https://weatherstack.com/dashboard -->
 <!-- time data source: https://sunrise-sunset.org/api -->
@@ -42,28 +61,3 @@ Day length: **9 hours, 25 minutes**
   <a href="www.linkedin.com/in/lara-musa" target="_blank"><img alt="LinkedIn" src="https://img.shields.io/badge/linkedin-%2312100E.svg?&style=for-the-badge&logo=linkedin&logoColor=white" /></a> 
   <a href="" target="_blank"><img alt="Medium" src="https://img.shields.io/badge/Portfolio-212121.svg?&style=for-the-badge&logo=white" /></a>
 </p>
-
-
-- 🔭 I’m currently working on **something**
-
-- 🌱 I’m currently learning **something**
-
-- 👨‍💻 All of my projects are available at [link](link)
-
-- 💬 Ask me about **anything**
-
-- 📫 How to reach me **lara.musa...**
-
-- ⚡ Fun fact **funfact**
-
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://linkedin.com/in/name" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="name" height="30" width="40" /></a>
-<a href="https://www.leetcode.com/name" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="name" height="30" width="40" /></a>
-<a href="https://discord.gg/name" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="name" height="30" width="40" /></a>
-</p>
-
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.mathworks.com/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
-
-<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=name&show_icons=true&locale=en&layout=compact" alt="name" /></p>
