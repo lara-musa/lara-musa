@@ -24,6 +24,13 @@
 <img width="200" src="https://cdn.moooi.com/tmp/image-thumbnails/Collection/Random/14158/image-thumb__14158__header_fullscreen_2x_jpg/Random-Light-II-white-medium-on-black.webp" /></p>
  
 <!-- WEATHER_START -->
+
+📍 Calgary Weather:
+- Temperature: 2°C
+- Conditions: Sunny
+- Sunrise: null
+- Sunset: null
+
 <!-- WEATHER_END -->
 
 - 🔭 I’m currently working on **something**
