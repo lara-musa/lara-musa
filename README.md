@@ -23,8 +23,8 @@
 <img width="200" src="https://cdn.moooi.com/tmp/image-thumbnails/Collection/Random/14158/image-thumb__14158__header_fullscreen_2x_jpg/Random-Light-II-white-medium-on-black.webp" /> 
 <img width="200" src="https://cdn.moooi.com/tmp/image-thumbnails/Collection/Random/14158/image-thumb__14158__header_fullscreen_2x_jpg/Random-Light-II-white-medium-on-black.webp" /></p>
  
-<br/>Currently, the weather is: <b> 7°C, <i>broken clouds</i></b></br>Today, the sun rises at <b>07:20</b> and sets at <b>15:42</b>.</p>
-
+<!-- WEATHER_START -->
+<!-- WEATHER_END -->
 
 - 🔭 I’m currently working on **something**
 
