@@ -49,10 +49,10 @@ jobs:
         
         # Create weather content with explicit newlines
         weather_content="☁️Currently in Calgary:\\n\\n"
-        weather_content+="  The temperature is  **${temperature}°C, *${weather_condition}***\\n\\n"
-        weather_content+="  Sunrise: ***${sunrise_local}***,         Sunset: **${sunset_local}**\\n\\n"
-        weather_content+="  Day length: **${hours} hours, ${minutes} minutes**\\n\\n"
-        weather_content+="  > Last updated at ${current_time}\\n"
+        weather_content+="    The temperature is  **${temperature}°C, *${weather_condition}***\\n\\n"
+        weather_content+="    Sunrise: ***${sunrise_local}***,         Sunset: **${sunset_local}**\\n\\n"
+        weather_content+="   Day length: **${hours} hours, ${minutes} minutes**\\n\\n"
+        weather_content+="   > Last updated at ${current_time}\\n"
         
         # Update README.md between the markers
         awk '
