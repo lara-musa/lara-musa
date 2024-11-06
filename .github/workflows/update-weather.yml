@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   update-weather:
-    runs-on: ubuntu-latest
+    runs-in: ubuntu-latest
     
     steps:
     - uses: actions/checkout@v2
@@ -43,33 +43,24 @@ jobs:
         sunrise_local=$(TZ='America/Edmonton' date -d "$sunrise_utc" '+%-I:%M %p')
         sunset_local=$(TZ='America/Edmonton' date -d "$sunset_utc" '+%-I:%M %p')
         
-        # Calculate day length in hours and minutes
-        hours=$((day_length/3600))
-        minutes=$(((day_length%3600)/60))
+        # Format day length from seconds to hours and minutes
+        day_length_formatted=$(echo $sun_response | jq -r '.results.day_length' | awk -F: '{ printf "%d hours, %d minutes", $1, $2 }')
         
-        # Create weather content with indentation and reduced line spacing
-        weather_content="📍 Currently in Calgary:\\n"
-        weather_content+="&nbsp;&nbsp;&nbsp;&nbsp;The temperature is  **${temperature}°C, *${weather_condition}***\\n"
-        weather_content+="&nbsp;&nbsp;&nbsp;&nbsp;Sunrise: ***${sunrise_local}***,         Sunset: **${sunset_local}**\\n"
-        weather_content+="&nbsp;&nbsp;&nbsp;&nbsp;Day length: **${hours} hours, ${minutes} minutes**\\n"
-        weather_content+="&nbsp;&nbsp;&nbsp;&nbsp;> Last updated at ${current_time}\\n"
-        
-        # Update README.md between the markers
-        awk '
-        /<!-- WEATHER_START -->/ {
-          print;
-          printf "'"$weather_content"'";
-          in_weather = 1;
-          next;
-        }
-        /<!-- WEATHER_END -->/ {
-          in_weather = 0;
-          print;
-          next;
-        }
-        !in_weather {
-          print;
-        }' README.md > README.tmp && mv README.tmp README.md
+        # Create weather content with explicit newlines and indentation
+        cat > weather.txt << EOL
+📍 Currently in Calgary:
+    The temperature is  **${temperature}°C, *${weather_condition}***
+    Sunrise: ***${sunrise_local}***,         Sunset: **${sunset_local}**
+    Day length: **${day_length_formatted}**
+    > Last updated at ${current_time}
+EOL
+
+        # Update README.md between the markers using sed
+        sed -i -e '/<!-- WEATHER_START -->/,/<!-- WEATHER_END -->/!b' \
+               -e '/<!-- WEATHER_START -->/!d' \
+               -e '/<!-- WEATHER_END -->/!d' \
+               -e '/<!-- WEATHER_START -->/r weather.txt' \
+               README.md
         
     - name: Commit and Push Changes
       run: |
