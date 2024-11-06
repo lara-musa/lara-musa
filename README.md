@@ -4,23 +4,15 @@
 <p>I'm an Electrical Engineering Student in <img src="https://cdn-icons-png.flaticon.com/128/4628/4628640.png" width="15"/> <b>Calgary, Canada</b>. I'm currently finishing my degree and whipping up a few projects on the side.</p>
 <!-- country icon  source: https://www.flaticon.com/search?word=canada -->
 
-<table>
-  <tr>
-    <td>
-      <ul>
-        <li>🔭 I’m currently working on <strong>something</strong></li>
-        <li>🌱 I’m currently learning <strong>something</strong></li>
-        <li>👨‍💻 All of my projects are available at <a href="link">link</a></li>
-        <li>💬 Ask me about <strong>anything</strong></li>
-        <li>📫 How to reach me <strong>lara.musa...</strong></li>
-        <li>⚡ Fun fact <strong>funfact</strong></li>
-      </ul>
-    </td>
-    <td>
-      <img src="https://i.pinimg.com/564x/6c/94/ac/6c94ac7ee21445949bcd141d4328d45f.jpg" width="200"/>
-    </td>
-  </tr>
-</table>
+<img align="right" src="https://i.pinimg.com/564x/49/7e/d9/497ed9165bd23baec4f5b463355e4ba9.jpg"/>
+<ul>
+>>  I’m currently working on . <br>
+>>  I’m currently Learning .  <br>
+>>  Most of my projects are available at <a href="https://github.com/lara-musa">Github</a>.  <br>
+>>  Tell me about <strong>modern engineering, embedded systems, </strong>.  <br>
+>>  Check out my <a href="">portfolio</a>.  <br>
+>>  Fun Fact: 
+</ul>
 
 
 <h3>Things I code with</h3>
