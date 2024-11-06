@@ -1,16 +1,51 @@
-## Hi there 👋
+<h1><img src="https://cdn.discordapp.com/emojis/552927522824781834.gif?size=128" width="32"/> Hi! I'm lara</h1>
+<!-- emoji source: https://blobs.gg/ -->
 
-<!--
-**lara-musa/lara-musa** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<p>Welcome to my page! </br> I'm Lara, Electrical Engineering Student in <img src="https://cdn-icons-png.flaticon.com/128/4628/4628640.png" width="15"/> <b>Calgary, Canada</b>. </p>
+<!-- country icon  source: https://www.flaticon.com/search?word=canada -->
 
-Here are some ideas to get you started:
+<h3>Things I code with</h3>
+<p>
+  <img alt="System Verilog" src="https://img.shields.io/badge/System%20Verilog-4F000B?style=flat" />
+  <img alt="Python" src="https://img.shields.io/badge/Python-720026?style=flat&logo=python&logoColor=%23FFFF" />
+  <img alt="C" src="https://img.shields.io/badge/C-CE4257?style=flat&logo=c&logoColor=%23FFFF" />
+  <img alt="MATLAB" src="https://img.shields.io/badge/MATLAB-FF7F51?style=flat" />
+  <img alt="HTML" src="https://img.shields.io/badge/HTML5-FF9B54?style=flat&logo=html5" />
+</p>
+<!-- badges source: https://shields.io/badges -->
+<!-- badge icons source: https://simpleicons.org/ -->
+<!-- color pallete source: https://coolors.co/palettes -->
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<h3>Welcome to 🪴---!</h3>
+<p>Here are some pictures taken by me</p>
+<!-- plant emoji source: https://emojipedia.org/potted-plant -->
+<p><img width="200" src="https://cdn.moooi.com/tmp/image-thumbnails/Collection/Random/14158/image-thumb__14158__header_fullscreen_2x_jpg/Random-Light-II-white-medium-on-black.webp" /> 
+<img width="200" src="https://cdn.moooi.com/tmp/image-thumbnails/Collection/Random/14158/image-thumb__14158__header_fullscreen_2x_jpg/Random-Light-II-white-medium-on-black.webp" /> 
+<img width="200" src="https://cdn.moooi.com/tmp/image-thumbnails/Collection/Random/14158/image-thumb__14158__header_fullscreen_2x_jpg/Random-Light-II-white-medium-on-black.webp" /></p>
+ 
+<br/>Currently, the weather is: <b> 7°C, <i>broken clouds</i></b></br>Today, the sun rises at <b>07:20</b> and sets at <b>15:42</b>.</p>
+
+
+- 🔭 I’m currently working on **something**
+
+- 🌱 I’m currently learning **something**
+
+- 👨‍💻 All of my projects are available at [link](link)
+
+- 💬 Ask me about **anything**
+
+- 📫 How to reach me **lara.musa...**
+
+- ⚡ Fun fact **funfact**
+
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+<a href="https://linkedin.com/in/name" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="name" height="30" width="40" /></a>
+<a href="https://www.leetcode.com/name" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="name" height="30" width="40" /></a>
+<a href="https://discord.gg/name" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="name" height="30" width="40" /></a>
+</p>
+
+<h3 align="left">Languages and Tools:</h3>
+<p align="left"> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.mathworks.com/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
+
+<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=name&show_icons=true&locale=en&layout=compact" alt="name" /></p>
