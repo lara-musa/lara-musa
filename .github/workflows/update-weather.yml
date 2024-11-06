@@ -6,14 +6,13 @@ on:
     - cron: '0 0 * * *' # Run daily at midnight UTC
 
 jobs:
-
   update-weather:
     runs-on: ubuntu-latest
     
     steps:
     - uses: actions/checkout@v2
       with:
-        fetch-depth: 0 # Needed for git push
+        fetch-depth: 0
         
     - name: Get Weather Data
       env:
@@ -28,16 +27,27 @@ jobs:
         sunrise=$(echo $response | jq -r '.location.sunrise')
         sunset=$(echo $response | jq -r '.location.sunset')
         
-        # Update the README.md file
-        sed -i "s/Temperature: .*°C/Temperature: ${temperature}°C/" README.md
-        sed -i "s/Conditions: .*/Conditions: ${weather_condition}/" README.md
-        sed -i "s/Sunrise: .*/Sunrise: ${sunrise}/" README.md
-        sed -i "s/Sunset: .*/Sunset: ${sunset}/" README.md
+        # Create weather content
+        weather_content="\n📍 Calgary Weather:\n- Temperature: ${temperature}°C\n- Conditions: ${weather_condition}\n- Sunrise: ${sunrise}\n- Sunset: ${sunset}\n"
+        
+        # Update README.md between the markers
+        awk -v weather="$weather_content" '
+        /<!-- WEATHER_START -->/ {
+          print;
+          print weather;
+          next;
+        }
+        /<!-- WEATHER_END -->/ {
+          print;
+          next;
+        }
+        !/<!-- WEATHER_END -->/ {
+          print;
+        }' README.md > README.tmp && mv README.tmp README.md
         
     - name: Commit and Push Changes
       run: |
         git config user.email "github-actions[bot]@users.noreply.github.com"
         git config user.name "GitHub Actions Bot"
         git add README.md
-        git commit -m "Update Calgary weather" || echo "No changes to commit"
-        git push || echo "No changes to push"
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Update Calgary weather" && git push)
