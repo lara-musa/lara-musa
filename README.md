@@ -24,20 +24,15 @@
 <img width="200" src="https://cdn.moooi.com/tmp/image-thumbnails/Collection/Random/14158/image-thumb__14158__header_fullscreen_2x_jpg/Random-Light-II-white-medium-on-black.webp" /></p>
  
 <!-- WEATHER_START -->
-
 📍 Currently in Calgary:
-The temperature is  **2°C, *Sunny***
+
+The temperature is  **3°C, *Sunny***
+
 Sunrise: ***7:36 AM***,         Sunset: **5:02 PM**
+
 Day length: **9 hours, 25 minutes**
-> Last updated at 2:16 PM MST
 
-
-📍 Calgary Weather:
-- Temperature: 2°C
-- Conditions: Sunny
-- Sunrise: null
-- Sunset: null
-
+> Last updated at 2:21 PM MST
 <!-- WEATHER_END -->
 
 - 🔭 I’m currently working on **something**
