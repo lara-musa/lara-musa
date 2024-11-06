@@ -3,9 +3,8 @@ name: Update Calgary Weather
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0 * * *' # Run daily at midnight UTC
+    - cron: '0 14,22,6 * * *'  # Runs at 6am, 2pm, and 10pm MST (add 7 hours for UTC)
 
-# Add permissions block
 permissions:
   contents: write
 
@@ -18,21 +17,42 @@ jobs:
       with:
         fetch-depth: 0
         
-    - name: Get Weather Data
+    - name: Get Weather and Sun Data
       env:
         WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
       run: |
-        # Use the WeatherStack API to fetch weather data for Calgary
-        response=$(curl -s "http://api.weatherstack.com/current?access_key=$WEATHER_API_KEY&query=Calgary")
+        # Get current time in Calgary
+        current_time=$(TZ='America/Edmonton' date '+%-I:%M %p %Z')
         
-        # Extract the relevant weather information
-        temperature=$(echo $response | jq -r '.current.temperature')
-        weather_condition=$(echo $response | jq -r '.current.weather_descriptions[0]')
-        sunrise=$(echo $response | jq -r '.location.sunrise')
-        sunset=$(echo $response | jq -r '.location.sunset')
+        # Get weather data from WeatherStack
+        weather_response=$(curl -s "http://api.weatherstack.com/current?access_key=$WEATHER_API_KEY&query=Calgary")
+        
+        # Get sun data from sunrise-sunset.org for Calgary
+        sun_response=$(curl -s "https://api.sunrise-sunset.org/json?lat=51.0447&lng=-114.0719&formatted=0")
+        
+        # Extract weather information
+        temperature=$(echo $weather_response | jq -r '.current.temperature')
+        weather_condition=$(echo $weather_response | jq -r '.current.weather_descriptions[0]')
+        
+        # Extract and format sun information
+        sunrise_utc=$(echo $sun_response | jq -r '.results.sunrise')
+        sunset_utc=$(echo $sun_response | jq -r '.results.sunset')
+        day_length=$(echo $sun_response | jq -r '.results.day_length')
+        
+        # Convert UTC times to Calgary local time (MST/MDT)
+        sunrise_local=$(TZ='America/Edmonton' date -d "$sunrise_utc" '+%-I:%M %p')
+        sunset_local=$(TZ='America/Edmonton' date -d "$sunset_utc" '+%-I:%M %p')
+        
+        # Calculate day length in hours and minutes
+        hours=$((day_length/3600))
+        minutes=$(((day_length%3600)/60))
         
         # Create weather content
-        weather_content="\n📍 Calgary Weather:\n- Temperature: ${temperature}°C\n- Conditions: ${weather_condition}\n- Sunrise: ${sunrise}\n- Sunset: ${sunset}\n"
+        weather_content="\n📍 Currently in Calgary:\n"
+        weather_content+="The temperature is  **${temperature}°C, *${weather_condition}***\n"
+        weather_content+="Sunrise: ***${sunrise_local}***,         Sunset: **${sunset_local}**\n"
+        weather_content+="Day length: **${hours} hours, ${minutes} minutes**\n"
+        weather_content+="> Last updated at ${current_time}\n"
         
         # Update README.md between the markers
         awk -v weather="$weather_content" '
