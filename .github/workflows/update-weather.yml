@@ -48,11 +48,20 @@ jobs:
         minutes=$(((day_length%3600)/60))
         
         # Create weather content with explicit newlines
-        weather_content="☁️Currently in Calgary:\\n\\n"
-        weather_content+="    The temperature is  **${temperature}°C, *${weather_condition}***\\n\\n"
-        weather_content+="    Sunrise: ***${sunrise_local}***,         Sunset: **${sunset_local}**\\n\\n"
-        weather_content+="   Day length: **${hours} hours, ${minutes} minutes**\\n\\n"
-        weather_content+="   > Last updated at ${current_time}\\n"
+        #weather_content="☁️Currently in Calgary:\\n\\n"
+        #weather_content+="The temperature is  **${temperature}°C, *${weather_condition}***\\n\\n"
+        #weather_content+="Sunrise: ***${sunrise_local}***,         Sunset: **${sunset_local}**\\n\\n"
+        #weather_content+="Day length: **${hours} hours, ${minutes} minutes**\\n\\n"
+        #weather_content+="> Last updated at ${current_time}\\n"
+        
+        weather_content="\
+        <div style='border: 2px solid #000000; padding: 15px; border-radius: 10px; background-color: #f7f7f7;'>\
+        <strong>☁️ Currently in Calgary:</strong><br><br>\
+        The temperature is <strong>${temperature}°C</strong>, <em>${weather_condition}</em><br><br>\
+        <strong>Sunrise</strong>: ${sunrise_local},         <strong>Sunset</strong>: ${sunset_local}<br><br>\
+        <strong>Day Length</strong>: ${hours} hours, ${minutes} minutes<br><br>\
+        <em>Last updated at ${current_time}</em>\
+        </div>\
         
         # Update README.md between the markers
         awk '
