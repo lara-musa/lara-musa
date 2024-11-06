@@ -45,8 +45,13 @@ jobs:
 
       - name: Commit and Push Changes
         run: |
-          git config --local user.name "GitHub Action"
-          git config --local user.email "action@github.com"
-          git add README.md
-          git commit -m "Update weather information"
-          git push
+          TEMP=$(jq '.current.temperature' weather.json)
+          DESCRIPTION=$(jq -r '.current.weather_descriptions[0]' weather.json)
+          SUNRISE=$(jq -r '.current.sunrise' weather.json)
+          SUNSET=$(jq -r '.current.sunset' weather.json)
+          
+          printf "### Calgary Weather\nTemperature: ${TEMP}°C\nCondition: ${DESCRIPTION}\nSunrise: ${SUNRISE}\nSunset: ${SUNSET}" > weather-info.md
+        
+          sed -i '/<!-- WEATHER_START -->/,/<!-- WEATHER_END -->/c\
+          <!-- WEATHER_START -->\n\n'"$(cat weather-info.md)"'\n\n<!-- WEATHER_END -->' README.md
+
