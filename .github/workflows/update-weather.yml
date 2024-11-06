@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   update-weather:
-    runs-in: ubuntu-latest
+    runs-on: ubuntu-latest
     
     steps:
     - uses: actions/checkout@v2
@@ -43,24 +43,33 @@ jobs:
         sunrise_local=$(TZ='America/Edmonton' date -d "$sunrise_utc" '+%-I:%M %p')
         sunset_local=$(TZ='America/Edmonton' date -d "$sunset_utc" '+%-I:%M %p')
         
-        # Format day length from seconds to hours and minutes
-        day_length_formatted=$(echo $sun_response | jq -r '.results.day_length' | awk -F: '{ printf "%d hours, %d minutes", $1, $2 }')
+        # Calculate day length in hours and minutes
+        hours=$((day_length/3600))
+        minutes=$(((day_length%3600)/60))
         
-        # Create weather content with explicit newlines and indentation
-        cat > weather.txt << EOL
-📍 Currently in Calgary:
-    The temperature is  **${temperature}°C, *${weather_condition}***
-    Sunrise: ***${sunrise_local}***,         Sunset: **${sunset_local}**
-    Day length: **${day_length_formatted}**
-    > Last updated at ${current_time}
-EOL
-
-        # Update README.md between the markers using sed
-        sed -i -e '/<!-- WEATHER_START -->/,/<!-- WEATHER_END -->/!b' \
-               -e '/<!-- WEATHER_START -->/!d' \
-               -e '/<!-- WEATHER_END -->/!d' \
-               -e '/<!-- WEATHER_START -->/r weather.txt' \
-               README.md
+        # Create weather content with explicit newlines
+        weather_content="☁️Currently in Calgary:\\n\\n"
+        weather_content+="  The temperature is  **${temperature}°C, *${weather_condition}***\\n\\n"
+        weather_content+="  Sunrise: ***${sunrise_local}***,         Sunset: **${sunset_local}**\\n\\n"
+        weather_content+="  Day length: **${hours} hours, ${minutes} minutes**\\n\\n"
+        weather_content+="  > Last updated at ${current_time}\\n"
+        
+        # Update README.md between the markers
+        awk '
+        /<!-- WEATHER_START -->/ {
+          print;
+          printf "'"$weather_content"'";
+          in_weather = 1;
+          next;
+        }
+        /<!-- WEATHER_END -->/ {
+          in_weather = 0;
+          print;
+          next;
+        }
+        !in_weather {
+          print;
+        }' README.md > README.tmp && mv README.tmp README.md
         
     - name: Commit and Push Changes
       run: |
