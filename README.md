@@ -4,18 +4,17 @@
 <p>I'm an Electrical Engineering Student in <img src="https://cdn-icons-png.flaticon.com/128/4628/4628640.png" width="15"/> <b>Calgary, Canada</b>. I'm currently finishing my degree and whipping up a few projects on the side.</p>
 <!-- country icon  source: https://www.flaticon.com/search?word=canada -->
 
-<img align="right" src="https://i.pinimg.com/564x/49/7e/d9/497ed9165bd23baec4f5b463355e4ba9.jpg"/>
+<img align="right" width="400" src="https://i.pinimg.com/564x/49/7e/d9/497ed9165bd23baec4f5b463355e4ba9.jpg">
 <ul>
->>  I’m currently working on . <br>
->>  I’m currently Learning .  <br>
+>>  I’m currently working on a project ---. <br>
+>>  I’m currently Learning how to use ---.  <br>
 >>  Most of my projects are available at <a href="https://github.com/lara-musa">Github</a>.  <br>
->>  Tell me about <strong>modern engineering, embedded systems, </strong>.  <br>
->>  Check out my <a href="">portfolio</a>.  <br>
->>  Fun Fact: 
+>>  Tell me about <strong>modern engineering, embedded systems, ---</strong>.  <br>
+>>  Check out my <a href="">portfolio</a>---.<br>
+>>  Fun Fact: ---
 </ul>
 
-
-<h3>Things I code with</h3>
+<h3>Languages I code with</h3>
 <p>
   <img alt="System Verilog" src="https://img.shields.io/badge/System%20Verilog-4F000B?style=flat" />
   <img alt="Python" src="https://img.shields.io/badge/Python-720026?style=flat&logo=python&logoColor=%23FFFF" />
@@ -27,7 +26,19 @@
 <!-- badge icons source: https://simpleicons.org/ -->
 <!-- color pallete source: https://coolors.co/palettes -->
 
-<h3>Welcome to 🪴---!</h3>
+<h3>Technologies I use</h3>
+<p>
+  <img alt="Vivado" src="https://img.shields.io/badge/Vivado-212121?style=flat" />
+  <img alt="Quartus" src="https://img.shields.io/badge/Quartus-212121?style=flat" />
+  <img alt="MPLAB" src="https://img.shields.io/badge/MPLAB-212121?style=flat" />
+  <img alt="Cygwin" src="https://img.shields.io/badge/Cygwin-212121?style=flat" />
+  <img alt="Fusion360" src="https://img.shields.io/badge/Fusion%20360-212121?style=flat&logo=autodesk" />
+  <img alt="PrusaSlicer" src="https://img.shields.io/badge/Prusa%20Slicer-212121?style=flat" />
+  <img alt="LTspice" src="https://img.shields.io/badge/LTspice-212121?style=flat&logo=ltspice" />
+  <img alt="KiCad" src="https://img.shields.io/badge/KiCad-212121?style=flat&logo=kicad" />
+</p>
+
+<h3> 🪴 Welcome to ---!</h3>
 <p>Here are some pictures taken by me</p>
 <!-- plant emoji source: https://emojipedia.org/potted-plant -->
 <p><img width="200" src="https://cdn.moooi.com/tmp/image-thumbnails/Collection/Random/14158/image-thumb__14158__header_fullscreen_2x_jpg/Random-Light-II-white-medium-on-black.webp" /> 
