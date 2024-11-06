@@ -1,17 +1,19 @@
 name: Update Calgary Weather
 
 on:
-  schedule:
-    - cron: '0 0 * * *' # Run daily at midnight UTC
   workflow_dispatch:
-      
+  schedule:
+    - cron: '0 0 * * *' 
 jobs:
+
   update-weather:
     runs-on: ubuntu-latest
     
     steps:
     - uses: actions/checkout@v2
-      
+      with:
+        fetch-depth: 0 # Needed for git push
+        
     - name: Get Weather Data
       env:
         WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
@@ -25,22 +27,16 @@ jobs:
         sunrise=$(echo $response | jq -r '.location.sunrise')
         sunset=$(echo $response | jq -r '.location.sunset')
         
-        # Save the weather data to a file
-        echo "# Calgary Weather" > weather.md
-        echo "- Temperature: ${temperature}°C" >> weather.md
-        echo "- Conditions: ${weather_condition}" >> weather.md
-        echo "- Sunrise: ${sunrise}" >> weather.md
-        echo "- Sunset: ${sunset}" >> weather.md
+        # Update the README.md file
+        sed -i "s/Temperature: .*°C/Temperature: ${temperature}°C/" README.md
+        sed -i "s/Conditions: .*/Conditions: ${weather_condition}/" README.md
+        sed -i "s/Sunrise: .*/Sunrise: ${sunrise}/" README.md
+        sed -i "s/Sunset: .*/Sunset: ${sunset}/" README.md
         
-    - name: Commit Weather Update
+    - name: Commit and Push Changes
       run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add weather.md
+        git config --global user.email "github-actions@github.com"
+        git config --global user.name "GitHub Actions"
+        git add README.md
         git commit -m "Update Calgary weather"
-        
-    - name: Push Changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: ${{ github.ref }}
+        git push
