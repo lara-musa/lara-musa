@@ -25,14 +25,10 @@
  
 <!-- WEATHER_START -->
 📍 Currently in Calgary:
-
-The temperature is  **3°C, *Sunny***
-
-Sunrise: ***7:36 AM***,         Sunset: **5:02 PM**
-
-Day length: **9 hours, 25 minutes**
-
-> Last updated at 2:21 PM MST
+&nbsp;&nbsp;&nbsp;&nbsp;The temperature is  **3°C, *Sunny***
+&nbsp;&nbsp;&nbsp;&nbsp;Sunrise: ***7:36 AM***,         Sunset: **5:02 PM**
+&nbsp;&nbsp;&nbsp;&nbsp;Day length: **9 hours, 25 minutes**
+&nbsp;&nbsp;&nbsp;&nbsp;> Last updated at 2:24 PM MST
 <!-- WEATHER_END -->
 
 - 🔭 I’m currently working on **something**
