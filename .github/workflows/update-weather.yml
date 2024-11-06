@@ -1,0 +1,52 @@
+name: Update Weather in README
+
+on:
+  schedule:
+    - cron: "0 */3 * * *"  # Runs every 3 hours
+  workflow_dispatch:
+
+jobs:
+  update-weather:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Get Calgary Weather
+        env:
+          WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
+        run: |
+          # Make API call to Weatherstack for Calgary weather
+          curl -s "http://api.weatherstack.com/current?access_key=${WEATHER_API_KEY}&query=Calgary" > weather.json
+
+      - name: Update README
+        run: |
+          # Extract data from JSON using jq
+          TEMP=$(jq '.current.temperature' weather.json)
+          DESCRIPTION=$(jq -r '.current.weather_descriptions[0]' weather.json)
+          SUNRISE=$(jq -r '.location.localtime' weather.json | awk '{print $2}')
+          SUNSET=$(jq -r '.location.localtime' weather.json | awk '{print $2}')
+
+          # Format the sunrise/sunset times if available
+          if [ -n "$SUNRISE" ] && [ -n "$SUNSET" ]; then
+            SUNRISE_FORMATTED=$(date -d "$SUNRISE" +"%I:%M %p")
+            SUNSET_FORMATTED=$(date -d "$SUNSET" +"%I:%M %p")
+          else
+            SUNRISE_FORMATTED="N/A"
+            SUNSET_FORMATTED="N/A"
+          fi
+
+          # Create the weather section to add to the README
+          echo -e "### Calgary Weather\nCurrent temperature: ${TEMP}°C\nCondition: ${DESCRIPTION}\nSunrise: ${SUNRISE_FORMATTED}\nSunset: ${SUNSET_FORMATTED}" > weather-info.md
+
+          # Insert the updated weather information into the README
+          sed -i '/<!-- WEATHER_START -->/,/<!-- WEATHER_END -->/c\<!-- WEATHER_START -->\n\n'"$(cat weather-info.md)"'\n\n<!-- WEATHER_END -->' README.md
+
+      - name: Commit and Push Changes
+        run: |
+          git config --local user.name "GitHub Action"
+          git config --local user.email "action@github.com"
+          git add README.md
+          git commit -m "Update weather information"
+          git push
