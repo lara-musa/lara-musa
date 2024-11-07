@@ -4,7 +4,7 @@
 <p>I'm an Electrical Engineering Student in <img src="https://cdn-icons-png.flaticon.com/128/4628/4628640.png" width="15"/> <b>Calgary, Canada</b>. I'm currently finishing my degree and whipping up a few projects on the side.</p>
 <!-- country icon  source: https://www.flaticon.com/search?word=canada -->
 
-<img align="right" width="400" src="https://i.pinimg.com/564x/49/7e/d9/497ed9165bd23baec4f5b463355e4ba9.jpg">
+<!--<img align="right" width="400" src="https://i.pinimg.com/564x/49/7e/d9/497ed9165bd23baec4f5b463355e4ba9.jpg">-->
 <ul>
 >>  I’m currently working on a project ---. <br>
 >>  I’m currently Learning how to use ---.  <br>
@@ -25,6 +25,7 @@
 <!-- badges source: https://shields.io/badges -->
 <!-- badge icons source: https://simpleicons.org/ -->
 <!-- color pallete source: https://coolors.co/palettes -->
+<!-- additional good badge resourse: https://github.com/Ileriayo/markdown-badges -->
 
 <h3>Technologies I use</h3>
 <p>
@@ -38,7 +39,7 @@
   <img alt="KiCad" src="https://img.shields.io/badge/KiCad-212121?style=flat&logo=kicad" />
 </p>
 
-<h3> 🪴 Welcome to ---!</h3>
+<h3> 🪴 Nature in Calgary</h3>
 <p>Here are some pictures taken by me</p>
 <!-- plant emoji source: https://emojipedia.org/potted-plant -->
 <p><img width="200" src="https://cdn.moooi.com/tmp/image-thumbnails/Collection/Random/14158/image-thumb__14158__header_fullscreen_2x_jpg/Random-Light-II-white-medium-on-black.webp" /> 
