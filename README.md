@@ -1,3 +1,6 @@
+![Header](./github-header-image.png)
+<!-- header source: https://leviarista.github.io/github-profile-header-generator/ -->
+
 <h1><img src="https://cdn.discordapp.com/emojis/635255827313328149.gif?size=128" width="32"/> hi there, i'm lara</h1>
 <!-- emoji source: https://blobs.gg/ -->
 
