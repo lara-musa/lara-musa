@@ -1,4 +1,4 @@
-![Header](./github-header-image.png)
+![Header](./github-header.png)
 <!-- header source: https://leviarista.github.io/github-profile-header-generator/ -->
 
 <h1><img src="https://cdn.discordapp.com/emojis/635255827313328149.gif?size=128" width="32"/> hi there, i'm lara</h1>
@@ -62,6 +62,9 @@ Day length: **9 hours, 25 minutes**
 <!-- WEATHER_END -->
 <!-- weather data source: https://weatherstack.com/dashboard -->
 <!-- time data source: https://sunrise-sunset.org/api -->
+
+![image](https://github.com/user-attachments/assets/8655ca84-38c1-4e4f-aaa9-144cf044d913)
+<!-- Image source ANSI shadow font or first 3D font: https://patorjk.com/software/taag/#p=display&f=ANSI%20Shadow&t=Type%20Something%20 -->
 
 <h3>Where to find me</h3>
 <p><a href="https://github.com/lara-musa" target="_blank"><img alt="Github" src="https://img.shields.io/badge/GitHub-%2312100E.svg?&style=for-the-badge&logo=Github&logoColor=white" /></a> 
