@@ -62,7 +62,7 @@ This updates automatically!
 <!-- weather data source: https://weatherstack.com/dashboard -->
 <!-- time data source: https://sunrise-sunset.org/api -->
 
-![image](https://github.com/user-attachments/assets/8655ca84-38c1-4e4f-aaa9-144cf044d913)
+<img src="./madeWithLove.png" width="700"/>
 <!-- Image source ANSI shadow font or first 3D font: https://patorjk.com/software/taag/#p=display&f=ANSI%20Shadow&t=Type%20Something%20 -->
 
 <h3>Where to find me</h3>
