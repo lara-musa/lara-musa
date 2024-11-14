@@ -3,17 +3,15 @@
 <h1><img src="https://cdn.discordapp.com/emojis/635255827313328149.gif?size=128" width="32"/> hi there, i'm lara</h1>
 <!-- emoji source: https://blobs.gg/ -->
 
-<p>I'm an Electrical Engineering Student in <img src="https://cdn-icons-png.flaticon.com/128/4628/4628640.png" width="15"/> <b>Calgary, Canada</b>. I'm currently finishing my degree and whipping up a few projects on the side.</p>
+<p>I'm an Electrical Engineering Student. I'm currently finishing my degree and whipping up a few projects on the side.</p>
 <!-- country icon  source: https://www.flaticon.com/search?word=canada -->
 
 <!--<img align="right" width="400" src="https://i.pinimg.com/564x/49/7e/d9/497ed9165bd23baec4f5b463355e4ba9.jpg">-->
 <ul>
->>  I’m currently working on a project ---. <br>
->>  I’m currently Learning how to use ---.  <br>
->>  Most of my projects are available at <a href="https://github.com/lara-musa">Github</a>.  <br>
->>  Tell me about <strong>modern engineering, embedded systems, ---</strong>.  <br>
->>  Check out my <a href="">portfolio</a>---.<br>
->>  Fun Fact: ---
+>>  I’m currently working on a <b>Discrete ADC</b> project. <br>
+>>  I’m currently Learning how to use <b>Kernel</b>.  <br>
+>>  Most of my projects are available <a href="https://github.com/lara-musa?tab=repositories">here</a>.  <br>
+>>  Check out my <a href="">portfolio -- this is a work in progress</a>.<br>
 </ul>
 
 <h3>Languages I code with</h3>
@@ -43,9 +41,10 @@
 
 <h3> 🪴 Nature in Calgary</h3>
 <p>Here are some pictures taken by me</p>
+also a work in progress
 <!-- plant emoji source: https://emojipedia.org/potted-plant -->
-<p><img width="200" src="https://cdn.moooi.com/tmp/image-thumbnails/Collection/Random/14158/image-thumb__14158__header_fullscreen_2x_jpg/Random-Light-II-white-medium-on-black.webp" /> 
-<img width="200" src="https://cdn.moooi.com/tmp/image-thumbnails/Collection/Random/14158/image-thumb__14158__header_fullscreen_2x_jpg/Random-Light-II-white-medium-on-black.webp" /> 
+<p><img width="200" src="https://cdn.moooi.com/tmp/image-thumbnails/Collection/Random/14158/image-thumb__14158__header_fullscreen_2x_jpg/Random-Light-II-white-medium-on-black.webp" />
+<img width="200" src="https://cdn.moooi.com/tmp/image-thumbnails/Collection/Random/14158/image-thumb__14158__header_fullscreen_2x_jpg/Random-Light-II-white-medium-on-black.webp" />
 <img width="200" src="https://cdn.moooi.com/tmp/image-thumbnails/Collection/Random/14158/image-thumb__14158__header_fullscreen_2x_jpg/Random-Light-II-white-medium-on-black.webp" /></p>
  
 <!-- WEATHER_START -->
@@ -59,6 +58,7 @@ Day length: **9 hours, 0 minutes**
 
 > Last updated at 7:37 AM MST
 <!-- WEATHER_END -->
+This updates automatically!
 <!-- weather data source: https://weatherstack.com/dashboard -->
 <!-- time data source: https://sunrise-sunset.org/api -->
 
