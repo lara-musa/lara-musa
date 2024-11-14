@@ -52,7 +52,7 @@
 <!-- WEATHER_START -->
 ☁️Currently in Calgary:
 
-The temperature is  **4°C, *Overcast ***
+The temperature is  **4°C, Overcast**
 
 Sunrise: ***7:48 AM***,         Sunset: **4:52 PM**
 
