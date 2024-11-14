@@ -1,10 +1,8 @@
 ![Header](./currentbanner.png)
 
 <h1><img src="https://cdn.discordapp.com/emojis/635255827313328149.gif?size=128" width="32"/> hi there, i'm lara</h1>
-<!-- emoji source: https://blobs.gg/ -->
 
 <p>I'm an Electrical Engineering Student. I'm currently finishing my degree and whipping up a few projects on the side.</p>
-<!-- country icon  source: https://www.flaticon.com/search?word=canada -->
 
 <!--<img align="right" width="400" src="https://i.pinimg.com/564x/49/7e/d9/497ed9165bd23baec4f5b463355e4ba9.jpg">-->
 <ul>
@@ -22,10 +20,6 @@
   <img alt="MATLAB" src="https://img.shields.io/badge/MATLAB-FF7F51?style=flat" />
   <img alt="HTML" src="https://img.shields.io/badge/HTML5-FF9B54?style=flat&logo=html5" />
 </p>
-<!-- badges source: https://shields.io/badges -->
-<!-- badge icons source: https://simpleicons.org/ -->
-<!-- color pallete source: https://coolors.co/palettes -->
-<!-- additional good badge resourse: https://github.com/Ileriayo/markdown-badges -->
 
 <h3>Technologies I use</h3>
 <p>
@@ -63,7 +57,6 @@ This updates automatically!
 <!-- time data source: https://sunrise-sunset.org/api -->
 
 <img src="./madeWithLove.png" width="700"/>
-<!-- Image source ANSI shadow font or first 3D font: https://patorjk.com/software/taag/#p=display&f=ANSI%20Shadow&t=Type%20Something%20 -->
 
 <h3>Where to find me</h3>
 <p><a href="https://github.com/lara-musa" target="_blank"><img alt="Github" src="https://img.shields.io/badge/GitHub-%2312100E.svg?&style=for-the-badge&logo=Github&logoColor=white" /></a> 
