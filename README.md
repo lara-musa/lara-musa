@@ -46,11 +46,11 @@ also a work in progress
 
 The temperature is  **4°C, *Partly cloudy***
 
-Sunrise: ***8:16 AM***,         Sunset: **4:34 PM**
+Sunrise: ***8:17 AM***,         Sunset: **4:34 PM**
 
-Day length: **8 hours, 18 minutes**
+Day length: **8 hours, 16 minutes**
 
-> Last updated at 3:19 PM MST
+> Last updated at 11:34 PM MST
 <!-- WEATHER_END -->
 This updates automatically!
 <!-- weather data source: https://weatherstack.com/dashboard -->
