@@ -46,11 +46,11 @@ also a work in progress
 
 The temperature is  **null°C, *null***
 
-Sunrise: ***5:23 AM***,         Sunset: **9:45 PM**
+Sunrise: ***5:22 AM***,         Sunset: **9:46 PM**
 
-Day length: **16 hours, 22 minutes**
+Day length: **16 hours, 24 minutes**
 
-> Last updated at 5:44 PM MDT
+> Last updated at 3:57 AM MDT
 <!-- WEATHER_END -->
 This updates automatically!
 <!-- weather data source: https://weatherstack.com/dashboard -->
