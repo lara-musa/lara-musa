@@ -50,7 +50,7 @@ Sunrise: ***5:20 AM***,         Sunset: **9:51 PM**
 
 Day length: **16 hours, 31 minutes**
 
-> Last updated at 10:30 AM MDT
+> Last updated at 5:16 PM MDT
 <!-- WEATHER_END -->
 This updates automatically!
 <!-- weather data source: https://weatherstack.com/dashboard -->
