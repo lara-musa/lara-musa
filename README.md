@@ -44,13 +44,13 @@ also a work in progress
 <!-- WEATHER_START -->
 ☁️Currently in Calgary:
 
-The temperature is  **10°C, *Overcast ***
+The temperature is  **16°C, *Overcast ***
 
 Sunrise: ***7:32 AM***,         Sunset: **7:20 PM**
 
 Day length: **11 hours, 47 minutes**
 
-> Last updated at 6:17 AM MDT
+> Last updated at 1:09 PM MDT
 <!-- WEATHER_END -->
 This updates automatically!
 <!-- weather data source: https://weatherstack.com/dashboard -->
