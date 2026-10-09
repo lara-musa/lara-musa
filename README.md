@@ -46,11 +46,11 @@ also a work in progress
 
 The temperature is  **11°C, *Overcast ***
 
-Sunrise: ***7:47 AM***,         Sunset: **7:00 PM**
+Sunrise: ***7:48 AM***,         Sunset: **6:58 PM**
 
-Day length: **11 hours, 13 minutes**
+Day length: **11 hours, 9 minutes**
 
-> Last updated at 1:41 PM MDT
+> Last updated at 7:45 PM MDT
 <!-- WEATHER_END -->
 This updates automatically!
 <!-- weather data source: https://weatherstack.com/dashboard -->
